@@ -15,7 +15,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const conn = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "4fo6ewde9VFn&k$AUynpSVc4L5zAVFHHcVSm^%%raxi4SLbZBS2rr$xSGb8^JFv!",
+  password: "",
   database: "nsocial_web",
 });
 
