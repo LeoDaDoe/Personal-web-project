@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Start of carousel */
+#backgCar {
+  position: fixed;
+  width: 100%;
+
+  z-index: -1;
+}
+
+.carousel,
+.carousel-inner {
+  width: 100%;
+
+  z-index: 0;
+  overflow: hidden;
+}
+.carousel-inner .item {
+  width: 100%;
+  background-position: center center;
+  z-index: 0;
+  transition-duration: 2s;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+#backgroundCarouselItem {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#carousel-item:after {
+  content: " ";
+  position: absolute;
+  border: 1px solid #000;
+  height: 20px;
+  width: 80px;
+  bottom: -20px;
+  right: -1px;
+  border-top: 0;
+  border-left: 0;
+  background: #ccc;
+}
+#carousel-item:before {
+  content: " ";
+  position: absolute;
+  border-bottom: 1px solid #000;
+  height: 29px;
+  width: 29px;
+  transform: rotate(45deg);
+  bottom: -15px;
+  left: 6px;
+  background: #ccc;
+}
+#backgroundCarouselItem {
+  height: 80vh;
+}
+
+/* End of carousel */
+
+/* Start of navbar */
+
+.navbar-nav > li {
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+#navbarBody {
+  position: absolute;
+  z-index: 1;
+  justify-content: left;
+}
+
+/* End of navbar */
+
+/* Start of main */
+
+body {
+  overflow-x: hidden;
+}
+
+.pb_slant-white:after {
+  background-color: #fff;
+}
+
+.pb_section {
+  padding: 10em 0;
+}
+
+.py-3 {
+  font-size: 22px !important;
+}
+.py-4 {
+  font-size: 27px !important;
+}
+
+/* End of main */
+
+/*Start of footer*/
+footer {
+  z-index: 100;
+  position: relative;
+  margin-top: 180px;
+}
+/*Start of footer*/
